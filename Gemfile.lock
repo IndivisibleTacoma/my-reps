@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     activesupport (4.2.7)
       i18n (~> 0.7)
@@ -195,9 +195,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages
+  github-pages (= 117)
   jekyll
   jekyll-redirect-from
+  json
 
 BUNDLED WITH
    1.14.2

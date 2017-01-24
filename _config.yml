@@ -1,6 +1,6 @@
 port:  5000
 markdown: kramdown
-name: "My Reps"
+name: "Letters for Democracy"
 url: http://lettersfordemocracy.org
 encoding: utf-8
 timezone: America/Los_Angeles
@@ -8,3 +8,4 @@ description: "Enter your address to find and contact your federal, state, county
 gems:
   - jekyll-redirect-from
 google_api_key: AIzaSyClA5qbarnOkp2kDJDml9L0rzEg5N4YfUU
+include: [CNAME]
