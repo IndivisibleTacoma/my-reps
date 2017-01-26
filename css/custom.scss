@@ -1,12 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,700i);
+$lfd-red:#DD0000;
 
 body {
     font-size: 16px;
     font-family: 'Open Sans', 'Arial', sans-serif;
+    background-color:white;
 } 
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bitter', serif;
+    font-family: 'Merriweather', serif;
     font-weight: bold;
 }
 
@@ -15,11 +20,18 @@ h1 {
     padding-bottom: 10px;
 }
 
-h1 a, h1 a:hover {
-    color: #444444;
-    text-decoration: none;
+.star img{
+    height: 39px;
+    margin-top: -8px;
 }
-
+h1.logo{
+    font-weight:300;
+    letter-spacing: 5px;
+    color:$lfd-red;
+}
+#county-name, #local-name, #state-name, #federal-name, #county-name-nav{
+    text-transform:capitalize;
+}
 .table > thead > tr > th { 
     white-space: nowrap;
 }

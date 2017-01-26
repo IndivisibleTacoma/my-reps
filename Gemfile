@@ -9,3 +9,4 @@ gem 'github-pages', versions['github-pages']
 # web
 gem 'jekyll'
 gem 'jekyll-redirect-from'
+
