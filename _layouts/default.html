@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-    <title>
+     <title>
       {% if page.title %}
         {{page.title}} -
       {% endif %} 
@@ -9,14 +9,36 @@
     </title>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% if page.description %}
+    <link rel="apple-touch-icon" sizes="180x180" href="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/manifest.json">
+    <link rel="mask-icon" href="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/favicon.ico">
+    <meta name="msapplication-config" content="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="Description" content="Resisting the Trump/Bannon agenda in the Great Pacific Northwest!.">
+    <!--Facebook Open Graph 
+    <meta property="og:title" content="Indivisible Tacoma" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://indivisibletacoma.org" />
+    <meta property="og:description" content="Resisting the Trump/Bannon agenda in the Great Pacific Northwest!" />
+    <meta property="og:image" content="https://indivisibletacoma.blob.core.windows.net/media/Default/images/IndTac_logo_final_social.jpg" />
+
+    <!--Twitter Open Graph -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Indivisible Tacoma" />
+    <meta name="twitter:description" content="Resisting the Trump/Bannon agenda in the Great Pacific Northwest!" />
+    <meta name="twitter:image" content="https://indivisibletacoma.blob.core.windows.net/media/Default/images/IndTac_logo_final_social.jpg" />
+    <!--{% if page.description %}
       <meta content="{{ page.description }}" name='description' />
     {% else %}
       <meta content="{{ site.description }}" name='description' />
     {% endif %}
     <meta content="{{ site.name }}" name='author' />
 
-    <!-- Facebook metadata -->
+
     <meta content="{{ site.name }}" property="og:site_name">
     {% if page.title %}
       <meta content="{{ page.title }} - {{ site.name }}" property="og:title">
@@ -55,7 +77,7 @@
       {% endfor %}
     {% endif %}
 
-    <!-- Twitter metadata -->
+
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="{{ site.title }}">
     <meta name="twitter:creator" content="{{ site.title }}">
@@ -76,7 +98,7 @@
       <meta name="twitter:image:src" content="{{ site.url }}/images/{{ page.image }}">
     {% else %}
       <meta name="twitter:image:src" content="{{ site.url }}/images/usa.png">
-    {% endif %}
+    {% endif %}-->
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/custom.css">
@@ -112,10 +134,8 @@
 
         <div class='text-center'>
             
-            <h1 class="logo"><a href='index.html'>
-              <span class="star"><img src="/images/lettersfordemocracy-01.svg"/></span>
-              Letters for Democracy</a>
-              <span class="star"><img src="/images/lettersfordemocracy-01.svg"/></span>
+            <a href="/"><img class="logo" src="https://indivisibletacoma.blob.core.windows.net/media/Default/images/weblogo.svg" alt="Indivisible Tacoma"></a>
+            
               </h1>
             <!-- Update this tagline! -->
             <p class='lead'>Enter your address to <strong>find and contact</strong> your federal, state, county and local elected representatives</p>

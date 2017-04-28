@@ -1,7 +1,7 @@
 port:  5000
 markdown: kramdown
-name: "Letters for Democracy"
-url: http://lettersfordemocracy.org
+name: "Indivisible Tacoma"
+url: http://reps.indivisibletacoma.org
 encoding: utf-8
 timezone: America/Los_Angeles
 description: "Enter your address to find and contact your federal, state, county and local elected representatives"

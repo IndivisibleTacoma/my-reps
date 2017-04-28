@@ -273,9 +273,9 @@ layout: default
             <% if (info.phones){ %>
                 <% $.each(info.phones, function(i, phone){ %>
                     <% if ((i + 1) < info.phones.length){ %>
-                        <i class='fa fa-fw fa-phone'></i> <%= phone %><br />
+                        <i class='fa fa-fw fa-phone'></i> <a href="tel:<%= phone %>"><%= phone %></a><br />
                     <% } else { %>
-                        <i class='fa fa-fw fa-phone'></i> <%= phone %>
+                        <i class='fa fa-fw fa-phone'></i> <a href="tel:<%= phone %>"><%= phone %></a>
                     <% } %>
                 <% }) %>
                 <br />
@@ -297,7 +297,9 @@ layout: default
 <script src="js/lookup_tool.js"></script>
 <script type='text/javascript'>
   //<![CDATA[
+  //remove characters from href tel:
 
+      
     $(function() {
 
       var autocomplete = new google.maps.places.Autocomplete(document.getElementById('address'));
@@ -331,5 +333,6 @@ layout: default
           }
       });
     });
+
   //]]>
 </script>
