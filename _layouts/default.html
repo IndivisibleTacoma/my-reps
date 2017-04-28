@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='en'>
   <head>
-     <title>
+    <title>
       {% if page.title %}
         {{page.title}} -
       {% endif %} 
@@ -9,36 +9,14 @@
     </title>
     <meta charset='utf-8' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/manifest.json">
-    <link rel="mask-icon" href="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/favicon.ico">
-    <meta name="msapplication-config" content="https://indivisibletacoma.blob.core.windows.net/media/Default/favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="Description" content="Resisting the Trump/Bannon agenda in the Great Pacific Northwest!.">
-    <!--Facebook Open Graph 
-    <meta property="og:title" content="Indivisible Tacoma" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://indivisibletacoma.org" />
-    <meta property="og:description" content="Resisting the Trump/Bannon agenda in the Great Pacific Northwest!" />
-    <meta property="og:image" content="https://indivisibletacoma.blob.core.windows.net/media/Default/images/IndTac_logo_final_social.jpg" />
-
-    <!--Twitter Open Graph -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Indivisible Tacoma" />
-    <meta name="twitter:description" content="Resisting the Trump/Bannon agenda in the Great Pacific Northwest!" />
-    <meta name="twitter:image" content="https://indivisibletacoma.blob.core.windows.net/media/Default/images/IndTac_logo_final_social.jpg" />
-    <!--{% if page.description %}
+    {% if page.description %}
       <meta content="{{ page.description }}" name='description' />
     {% else %}
       <meta content="{{ site.description }}" name='description' />
     {% endif %}
     <meta content="{{ site.name }}" name='author' />
 
-
+    <!-- Facebook metadata -->
     <meta content="{{ site.name }}" property="og:site_name">
     {% if page.title %}
       <meta content="{{ page.title }} - {{ site.name }}" property="og:title">
@@ -61,11 +39,12 @@
     {% if page.date %}
       <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     {% endif %}
-    {% if page.image %}
+    <!--{% if page.image %}
       <meta content="{{ site.url }}/{{ page.image }}" property="og:image">
     {% else %}
       <meta content="{{ site.url }}/images/usa.png" property="og:image">
-    {% endif %}
+    {% endif %}-->
+    <meta property="og:image" content="https://indivisibletacoma.blob.core.windows.net/media/Default/images/IndTac_logo_final_social.jpg" />
     {% if page.categories %}
       {% for category in page.categories limit:1 %}
       <meta content="{{ category }}" property="article:section">
@@ -77,8 +56,8 @@
       {% endfor %}
     {% endif %}
 
-
-    <meta name="twitter:card" content="summary">
+    <!-- Twitter metadata -->
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="{{ site.title }}">
     <meta name="twitter:creator" content="{{ site.title }}">
     {% if page.title %}
@@ -94,11 +73,12 @@
     {% else %}
       <meta name="twitter:description" content="{{ site.description }}">
     {% endif %}
-    {% if page.image %}
+    <!--{% if page.image %}
       <meta name="twitter:image:src" content="{{ site.url }}/images/{{ page.image }}">
     {% else %}
       <meta name="twitter:image:src" content="{{ site.url }}/images/usa.png">
     {% endif %}-->
+    <meta name="twitter:image" content="https://indivisibletacoma.blob.core.windows.net/media/Default/images/IndTac_logo_final_social.jpg" />
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/custom.css">
